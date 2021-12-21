@@ -1,5 +1,6 @@
 const Joi = require('joi');
 
+// Input validation schema
 const registerUserSchema = Joi.object({
   name: Joi.string().min(2).required().messages({
     'string.base': "'Name' should be a type of 'text'",
