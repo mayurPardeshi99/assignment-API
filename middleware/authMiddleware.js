@@ -2,6 +2,7 @@ const jwt = require('jsonwebtoken');
 const User = require('../models/userModel');
 const asyncHandler = require('express-async-handler');
 
+// Authentication using JWT token
 const protect = asyncHandler(async (req, res, next) => {
   if (
     req.headers.authorization &&
