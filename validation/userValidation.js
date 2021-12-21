@@ -1,5 +1,6 @@
 const { registerUserSchema, logInUserSchema } = require('./schemas');
 
+// Registration JSON validation
 const userRegisterValidate = (req, res, next) => {
   const { error } = registerUserSchema.validate(req.body);
   if (error) {
@@ -11,6 +12,7 @@ const userRegisterValidate = (req, res, next) => {
   }
 };
 
+// Log in JSON validation
 const userLogInValidate = (req, res, next) => {
   const { error } = logInUserSchema.validate(req.body);
   if (error) {
