@@ -1,4 +1,4 @@
-# Shopocus API Assignment
+# API Assignment
 
 API to manage user authentication. This API has three requests which are related to sign in , sign out a user and get user profile.
 
